@@ -66,7 +66,7 @@ class HttpProxyMiddleware(object):
     def reset_proxyes(self):
         """将所有count>=指定阈值的代理重置为valid"""
         logger.info('reset proxyes to valid')
-        for p in self.proxyer:
+        for p in self.proxyes:
             if p['count'] >= self.dump_count_threshold:
                 p['valid'] = True
 
