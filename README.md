@@ -8,7 +8,17 @@ HttpProxyMiddleware
 fetch_free_proxyes.py
 ---------------
 *************
+
 在各大免费代理网站上获取免费的proxyes。
+### 数据来源 ###
+
+[开心代理](www.kxdaili.com)
+[米扑科技](mimvp.com)
+[西刺免费代理](http://www.xicidaili.com/nn/)
+[代理ip检测平台](http://www.ip181.com/)
+[免费http代理IP](http://www.httpdaili.com/mfdl/)
+[66免费代理](http://www.66ip.cn/)
+
 Usage
 ---------------
 ***********
@@ -32,4 +42,5 @@ Usage
 在spider爬取的时候，如果获取到的状态码不在200或者指定的任何状态码将被视为无效代理，代理将被丢弃。
 
 	website_possible_httpstatus_list = [404]
+	handle_httpstatus_list = [403]
 spider爬取可能返回404响应，不丢弃代理。
